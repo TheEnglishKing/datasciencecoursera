@@ -1,0 +1,50 @@
+# Codebook for run_analysis.R
+
+This codebook describes the variables used in the provided R script for analyzing the UCI Human Activity Recognition (HAR) Dataset.
+
+## Variables in the Dataset:
+
+1. **xtrain, xtest**: 
+   - **Description**: Feature data from the training and testing datasets, respectively.
+   - **Data Type**: Data frame.
+   
+2. **ytrain, ytest**:
+   - **Description**: Activity labels corresponding to the feature data in the training and testing datasets, respectively.
+   - **Data Type**: Data frame.
+   
+3. **IDtrain, IDtest**:
+   - **Description**: Subject IDs for the observations in the training and testing datasets, respectively.
+   - **Data Type**: Data frame.
+   
+4. **features**:
+   - **Description**: List of all features recorded in the dataset.
+   - **Data Type**: Data frame.
+   
+5. **onedata**:
+   - **Description**: Merged dataset containing feature data, activity labels, and subject IDs.
+   - **Data Type**: Data frame.
+   
+6. **onlyavgandstd**:
+   - **Description**: Subset of the merged dataset containing only the mean and standard deviation features.
+   - **Data Type**: Data frame.
+   
+7. **featuresnames**:
+   - **Description**: Dataset with columns renamed to descriptive statistics.
+   - **Data Type**: Data frame.
+   
+8. **activities**:
+   - **Description**: Activity labels from the merged dataset.
+   - **Data Type**: Vector.
+   
+9. **grouping_df**:
+   - **Description**: Data frame used for grouping the dataset.
+   - **Data Type**: Data frame.
+   
+10. **tidydataset**:
+    - **Description**: Tidy dataset containing aggregated means of each feature by group.
+    - **Data Type**: Data frame.
+    
+## Additional Information:
+
+- The script reads data from text files located in specific directories on the user's desktop. These directories may vary depending on the user's file system.
+- The final tidy dataset is written to a CSV file named "tidydataset.csv" in the current working directory.
