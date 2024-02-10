@@ -1,0 +1,48 @@
+# README: Data Science Coursera | Getting and Cleaning Data Course Project
+
+This repository is my submission for the course project while completing the Getting and Cleaning course as part of the Data Science Specialization offered by John Hopkins University on Coursera. 
+
+This repository contains an R script for analyzing the UCI Human Activity Recognition (HAR) Dataset. The script, `run_analysis.R`, performs the following tasks:
+
+1. **Loading Packages**: The script loads the necessary packages, primarily `dplyr`.
+
+2. **Importing Data**: Data from both the training and testing datasets, including feature data, activity labels, and subject IDs, are imported into R.
+
+3. **Merging Data**: The script merges the training and testing datasets to create a single dataset.
+
+4. **Extracting Means and Standard Deviations**: Only the mean and standard deviation features are extracted from the dataset.
+
+5. **Renaming Columns**: Descriptive names are assigned to the columns in the dataset.
+
+6. **Renaming Activities**: The activities in the dataset are renamed for clarity.
+
+7. **Creating a Tidy Dataset**: A tidy dataset is created by calculating the mean of each feature for each activity and each subject.
+
+8. **Exporting Tidy Dataset**: The tidy dataset is exported to a CSV file named `tidydataset.csv`.
+
+## Usage
+
+To use the `run_analysis.R` script:
+
+1. Ensure that the UCI HAR Dataset is downloaded and extracted into the appropriate directory.
+
+2. Modify the file paths in the script to point to the correct locations of the dataset files on your system.
+
+3. Run the script in an R environment or RStudio.
+
+## Files
+
+- `run_analysis.R`: The R script for performing the analysis.
+- `tidydataset.csv`: The exported tidy dataset.
+
+## Notes
+
+- This script assumes that the required R packages (`dplyr`) are installed. If not, you may need to install them before running the script.
+
+- The script should be run in an environment where the UCI HAR Dataset is available.
+
+For more information about the UCI HAR Dataset, refer to the [original dataset repository](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones).
+
+If you have any questions or feedback, feel free to contact the repository owner.
+
+This README file was created with the help of ChatGPT.
